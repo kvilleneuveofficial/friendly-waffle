@@ -1,0 +1,307 @@
+:root {
+  --bg: #f7f2ea;
+  --text: #211d1b;
+  --muted: #6d625c;
+  --accent: #3b2f2f;
+  --card: #fffaf3;
+  --border: #ded3c4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-shell {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 64px 0 32px;
+}
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.tagline {
+  max-width: 680px;
+  margin: 28px 0 0;
+  font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.section-actions {
+  margin-top: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 18px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.button.primary {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.button.secondary {
+  color: var(--accent);
+}
+
+.button:hover {
+  opacity: 0.82;
+}
+
+.section {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+}
+
+.section p {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.featured {
+  max-width: 760px;
+}
+
+.featured h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.featured p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.writing-card {
+  max-width: 680px;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.writing-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.writing-card p {
+  margin-bottom: 12px;
+}
+
+.writing-card a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.writing-card a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Chapter pages */
+
+.chapter {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 56px 0 32px;
+}
+
+.chapter-header {
+  margin-bottom: 40px;
+}
+
+.chapter h1 {
+  font-size: clamp(2.75rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  margin: 12px 0 0;
+  letter-spacing: -0.055em;
+}
+
+.chapter p {
+  max-width: none;
+  font-size: 1.22rem;
+  line-height: 1.85;
+  margin: 0 0 1.75em;
+  color: var(--text);
+}
+
+.chapter .lede {
+  font-size: 1.45rem;
+  line-height: 1.55;
+  color: var(--accent);
+}
+
+.chapter .lede::first-letter {
+  float: left;
+  font-size: 4.8rem;
+  line-height: 0.85;
+  padding-right: 0.12em;
+  font-weight: bold;
+}
+
+.chapter em {
+  font-style: italic;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.chapter-break {
+  margin: 48px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+}
+
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.chapter-nav a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.chapter-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Placeholder chapter pages */
+
+.placeholder-chapter .chapter-nav {
+  margin-top: 64px;
+}
+
+.placeholder-chapter .actions {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .site-shell {
+    width: min(100% - 28px, 920px);
+    padding-top: 36px;
+  }
+
+  .hero {
+    min-height: 68vh;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .actions {
+    margin-top: 28px;
+  }
+
+  .chapter {
+    padding-top: 32px;
+  }
+
+  .chapter-header {
+    margin-bottom: 32px;
+  }
+
+  .chapter p {
+    font-size: 1.1rem;
+    line-height: 1.78;
+  }
+
+  .chapter .lede {
+    font-size: 1.25rem;
+  }
+
+  .chapter .lede::first-letter {
+    font-size: 3.8rem;
+  }
+
+  .chapter-nav {
+    flex-direction: column;
+  }
+}
