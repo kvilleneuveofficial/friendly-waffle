@@ -93,6 +93,10 @@ h1 {
   border-top: 1px solid var(--border);
 }
 
+.section-actions {
+  margin-top: 24px;
+}
+
 .section h2 {
   margin: 0 0 12px;
   font-size: 1.4rem;
@@ -145,4 +149,21 @@ h1 {
     width: 60px;
     height: 60px;
   }
+  
+.featured {
+  max-width: 760px;
+}
+
+.featured h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.featured p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
 }
