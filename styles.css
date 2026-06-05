@@ -166,4 +166,22 @@ h1 {
   line-height: 1.6;
 }
 
+.chapter-card {
+  margin-bottom: 24px;
+}
+
+.site-footer p + p {
+  margin-top: 8px;
+}
+
+.site-footer a {
+  color: var(--accent);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
 }
